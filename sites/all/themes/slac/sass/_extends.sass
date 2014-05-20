@@ -1,0 +1,115 @@
+@function em($target, $context: $base-font-size)
+  @if $target == 0
+    @return 0
+  @return $target / $context + 0em
+
+
+@mixin no-select
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+@mixin opacity($trans)
+  filter: alpha(opactiy=($trans * 100))
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$trans * 100})"
+  -moz-opacity: $trans
+  -khtml-opacity: $trans
+  opacity: $trans
+
+
+=placeholder($color)
+  &:focus
+    outline: 0 none
+  &::-webkit-input-placeholder
+    color: $color
+  &:-moz-placeholder
+    color: $color
+  &::-moz-placeholder
+    color: $color
+  &:-ms-input-placeholder
+    color: $color
+  &.placeholder
+    color: $color
+
+.clearfix
+  *zoom: 1
+  &:before,
+  &:after
+    content: ""
+    display: table
+  &:after
+    clear: both
+
+=clearfix
+  *zoom: 1
+  &:before,
+  &:after
+    content: ""
+    display: table
+  &:after
+    clear: both
+
+$base-font-size: 16px
+
+@function calculateRem($size)
+  $remSize: $size / $base-font-size
+  @return #{$remSize}rem
+
+@mixin fontsize-rem($size)
+  font-size: $size
+  font-size: calculateRem($size)
+
+
+.slac-font
+  font-family: 'slac'
+  font-weight: normal
+  font-style: normal
+  text-indent: 0
+
+
+.date-and-author
+  color: $grey-5
+  +fontsize-rem(12px)
+  display: block
+  margin-bottom: 7px
+  font-style: italic
+
+
+
+
+
+.basic-format-text
+
+  +fontsize-rem(14px)
+  color: $grey-47
+
+  h2
+    +fontsize-rem(16px)
+    margin-bottom: 10px
+    margin-top: 15px
+  h3
+    +fontsize-rem(14px)
+    font-weight: bold
+
+  p
+    margin-bottom: 5px
+    line-height: 20px
+    img
+      margin: 15px 0
+
+
+  ul, ol
+    list-style-type: disc
+    padding-left: 20px
+    margin-bottom: 10px
+    &.links
+      padding-left: 0
+    li
+      line-height: 20px
+      margin-bottom: 5px
+
+.basic-intro-text-format
+  margin-bottom: 15px
