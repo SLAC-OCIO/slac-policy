@@ -208,4 +208,11 @@
     }
   };
 
+
+  $(document).ready(function () {
+      $('.collapse').hide();
+       $('.accordion-heading').click(function(){
+           $(this).next('.collapse').slideToggle();
+       });
+  });
 }(this, this.document, this.jQuery, this.Drupal));
