@@ -1,0 +1,8 @@
+Stanford Handbook 7.x-x.x xxxx-xx-xx
+------------------------------------
+
+Stanford Handbook 7.x-1.0-alpha1 2013-07-30
+-------------------------------------------
+The 1.0-alpha1 is the first somewhat-stable release. It includes the 4 main content
+  types (Handbook, Chapter, Subchapter, Handbook Page). Other features and functionality
+  should not be considered complete.

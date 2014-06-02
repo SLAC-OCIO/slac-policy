@@ -1,0 +1,241 @@
+<?php
+/**
+ * @file
+ * Code for the Policies feature.
+ */
+
+include_once 'stanford_handbook.features.inc';
+drupal_add_css(drupal_get_path('module', 'stanford_handbook') . '/stanford_handbook.css', array('group' => CSS_DEFAULT, 'every_page' => TRUE));
+
+
+/**
+ * Implements hook_block_info().
+ *
+ * Generate HTML for the user_role_summary block
+ * @returns block HTML
+ */
+function stanford_handbook_block_info() {
+	// set up an empty array which will contain the block contents
+	$blocks = array();
+
+	// Generate listing of blocks from this module, for the admin/block page
+	$blocks['policy_jumpto_block'] = array(
+		'info' => t('Policy Jumpto'),
+		'status' => 0,
+	);
+	// return the built content
+	return $blocks;
+}
+
+
+/**
+ * Implements hook_block_view().
+ *
+ * Generate HTML for the user_role_summary block
+ * @param op the operation from the URL
+ * @param delta offset
+ * @returns block HTML
+ */
+function stanford_handbook_block_view($delta=0) {
+
+	// set up an empty array which will contain the block contents
+	$block = array();
+  switch($delta) {
+    case 'policy_jumpto_block':
+			// Generate our block content
+			$block['subject'] = "";
+			$block['content'] = stanford_handbook_generate_toc();
+      break;
+  }
+	// return the built content
+	return $block;
+}
+
+/**
+ * Helper function to generate a render array that outputs the 'jump to' ToC
+ */
+function stanford_handbook_generate_toc($field = 'field_hbp_subsection', $f_title = 'field_hbp_subsection_title') {
+
+	$nid = arg(1);
+	$node = false;
+	
+	$hide_formatting = false;
+	
+	if(is_numeric($nid)){
+		$node = node_load($nid);
+
+    if(isset($node->field_hbp_hide_bullet_formatting[$node->language][0]['value'])){
+			if($node->field_hbp_hide_bullet_formatting[$node->language][0]['value']){
+				$hide_formatting = true;
+				}
+			}
+
+		
+	}
+	
+	if(!$node){
+		return '';
+	}
+	
+  $output = array();
+  $topic_ids = array();
+  $field_topics = array();
+  
+  // If node has a value for field_suppress_jump_to_template, we suppress the toc
+  $supress = 0;
+  if (isset($node->field_hbp_suppress_jump_to[LANGUAGE_NONE])) {
+    foreach ($node->field_hbp_suppress_jump_to[LANGUAGE_NONE] as $index => $entity){
+      if (is_array($entity)) {
+        $supress = array_pop($entity);
+      }
+    }
+  }
+  
+  if (!isset($node->$field)) {return '';}
+  
+  // Loop through the node and collect all of the field_collection_item entity IDs
+  $field_obj = $node->$field;
+  
+  if (isset($field_obj[LANGUAGE_NONE]) && !$supress) {
+  
+    foreach($field_obj[LANGUAGE_NONE] as $index => $entity_id) {
+      if (is_array($entity_id)) {
+        $topic_ids[] = $entity_id['value'];
+      } else {
+        $topic_ids[] = $entity_id;
+      }
+    }
+  
+  
+    // Load the entities whose IDs we just collected.
+    $field_topics = entity_load('field_collection_item', $topic_ids);
+  
+    // Generate the beginning and end of the ToC
+    $output['toc'] = array(
+      '#prefix' => '<div id="toc">',
+      '#suffix' => '</div>',
+    );
+  
+    // Generate the heading for the ToC.
+    $output['toc']['title'] = array(
+      '#theme' => 'html_tag',
+      '#tag' => 'h2',
+      '#value' => 'Jump To:',
+    );
+  
+    // Generate the container for each jump-to item
+    $output['toc']['links'] = array(
+      '#prefix' => '<ul>',
+      '#suffix' => '</ul>',
+    );
+    
+    $toc_links = false;
+    
+    $i=1;
+  
+    // Iterate through loaded entities and build ToC links.
+    foreach ($field_topics as $topic_id => $entity) {
+
+      // We'll use this twice so just store it.
+      $entity_title_obj = $entity->$f_title;
+
+      if (isset($entity_title_obj[LANGUAGE_NONE][0]['value'])) {
+
+        if(!$hide_formatting){
+	        $entity_title = "$i. ";
+        }
+        else{
+	        $entity_title = "";
+        }
+
+        $entity_title .= $entity_title_obj[LANGUAGE_NONE][0]['value'];
+        $toc_links = true;
+
+        // Generate the HTML ID.
+        $html_id = $entity->item_id;
+
+        // Generate each list item with a link to the appropriate subsection.
+        $output['toc']['links'][$topic_id] = array(
+          '#prefix' => '<li>',
+          '#theme' => 'html_tag',
+          '#attributes' => array('href' => '#anchor-'. $html_id),
+          '#tag' => 'a',
+          '#value' => $entity_title,
+          '#suffix' => '</li>',
+        );
+      }
+      $i++;
+    }
+
+    //if we didn't render any links, supress container
+    if (!$toc_links) {
+      unset($output['toc']);
+    }
+  }
+
+  return $output;
+}
+
+
+/**
+ * Helper function to generate HTML IDs from field_topic_title fields.
+ *
+ * Forces the string to lowercase and replaces spaces with dashes.
+ */
+function stanford_handbook_html_id($nid) {
+  return str_replace(' ', '-', strtolower($nid));
+}
+
+/**
+ * Implements hook_theme_registry_alter()
+ */
+function stanford_handbook_theme_registry_alter(&$theme_registry) {
+  $mod_path = drupal_get_path('module', 'stanford_handbook');
+  $theme_registry_copy = $theme_registry;       // munge on a copy
+  _theme_process_registry($theme_registry_copy, 'phptemplate', 'theme_engine', 'pow', $mod_path);
+  $theme_registry += array_diff_key($theme_registry_copy, $theme_registry);
+  $hooks = array('node');
+  foreach ($hooks as $h) {
+    _stanford_handbook_insert_after_first_element($theme_registry[$h]['theme paths'], $mod_path);
+  }
+}
+
+/**
+ * Helper function for re-ordering arrays (needed by theme_registry_alter)
+ */
+function _stanford_handbook_insert_after_first_element(&$a, $element) {
+  if(is_array($a)) {
+    $first_element = array_shift($a);
+    array_unshift($a, $first_element, $element);
+  }
+}
+
+/**
+ * Implements template_preprocess_node().
+ * @param type $vars
+ * @param type $hook
+ */
+function stanford_handbook_preprocess_node(&$vars, $hook) {
+	if($vars['type'] == 'handbook') {
+		$vars['section_view'] = views_embed_view('dor_policy_section_listing','block_1');
+		
+	}
+	if($vars['type'] == 'chapter') {
+		$vars['title'] = '1' . $vars['title'];
+		$vars['document_view'] = views_embed_view('dor_policy_document_listing','block_2');
+	}
+
+	// Check formatting conditions
+	if ($vars['type'] == 'handbook_page') {		
+		$vars['hide_formatting'] = false;
+		if(isset($vars['field_hbp_hide_bullet_formatting'][$vars['language']][0]['value'])){
+			if($vars['field_hbp_hide_bullet_formatting'][$vars['language']][0]['value']){
+				$vars['hide_formatting'] = true;
+			}
+		}
+		
+    $options = array(
+      'scope' => 'footer',
+    );	
+  }
+}
