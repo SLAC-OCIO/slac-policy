@@ -225,7 +225,7 @@ dependencies[] = slac_google_analytics
 
 ;SLAC Policy
 dependencies[] = slac_policy_pages
-dependencies[] = stanford_
+dependencies[] = stanford_handbook
 
 ;Admin Pieces
 dependencies[] = adminimal
