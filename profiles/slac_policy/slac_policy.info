@@ -228,5 +228,5 @@ dependencies[] = slac_policy_pages
 dependencies[] = stanford_handbook
 
 ;Admin Pieces
-dependencies[] = adminimal
+dependencies[] = adminimal_theme
 dependencies[] = adminimal_admin_menu
