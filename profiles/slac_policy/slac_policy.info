@@ -104,7 +104,7 @@ dependencies[] = pp_admin
 
 dependencies[] = bean
 dependencies[] = bean_wysiwyg
-dependencies[] = pp_demo_beans
+;dependencies[] = pp_demo_beans
 
 ; Pages
 dependencies[] = menu_block
