@@ -134,7 +134,10 @@ function slac_newsletter_default_page_manager_pages() {
   $page->admin_title = 'Newsletter';
   $page->admin_description = 'Newsletter custom page';
   $page->path = 'newsletter';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array(
     'type' => 'none',
     'title' => 'Newsletter',

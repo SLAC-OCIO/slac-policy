@@ -6,6 +6,7 @@ version = 7.x-1.0
 project = slac_policydefault
 dependencies[] = ctools
 dependencies[] = features
+dependencies[] = pp_demo
 dependencies[] = stanford_handbook
 dependencies[] = strongarm
 dependencies[] = uuid_features
