@@ -7,7 +7,7 @@
 /**
  * Implements hook_init().
  */
-function slac_int_org_init() {
+function slac_policy_init() {
   global $user, $base_url;
   if (!function_exists('drush_main') && $user->uid == 0 && $_GET['q'] != 'user/login' && module_exists('webauth')) {
     drupal_goto($base_url . '/' . conf_path() . '/files/webauth/login.php');
@@ -19,7 +19,7 @@ function slac_int_org_init() {
  *
  * Allows the profile to alter the site configuration form.
  */
-function slac_int_org_form_install_configure_form_alter(&$form, $form_state) {
+function slac_policy_form_install_configure_form_alter(&$form, $form_state) {
   // Pre-populate the site name with the server name.
   $form['site_information']['site_name']['#default_value'] = $_SERVER['SERVER_NAME'];
   $form['update_notifications']['#access'] = FALSE;
@@ -29,7 +29,7 @@ function slac_int_org_form_install_configure_form_alter(&$form, $form_state) {
 /**
  * Implements hook_paranoia_hide_modules().
  */
-function slac_int_org_paranoia_hide_modules() {
+function slac_policy_paranoia_hide_modules() {
   return array('update' => 'Core');
 }
 
@@ -39,6 +39,10 @@ function slac_int_org_paranoia_hide_modules() {
  *
  * @return array of modules with demo content
  */
+
+/*
+ * No longer needed
+
 function slac_int_org_demo_modules() {
   return array(
     'slac_blog_demo',
@@ -55,11 +59,11 @@ function slac_int_org_demo_modules() {
     //'slac_newsletter_demo',
   );
 }
-
+*/
 /**
  * Alter slac_configuration_form form.
  */
-function slac_int_org_form_slac_configuration_form_alter(&$form, &$form_state) {
+function slac_policy_form_slac_configuration_form_alter(&$form, &$form_state) {
   $form['site_name_abbreviation'] = array(
     '#type' => 'textfield',
     '#title' => t('Site Abbreviation'),

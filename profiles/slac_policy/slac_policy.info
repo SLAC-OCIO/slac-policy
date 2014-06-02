@@ -1,5 +1,5 @@
-name = SLAC Intranet Organization
-description = A distribution for SLAC Intranet sites. 
+name = SLAC Policy Distribution
+description = A distribution for SLAC Policy sites.
 version = VERSION
 core = 7.x
 

@@ -6,7 +6,9 @@
 
 /**
  * Implements hook_install_tasks().
- */
+ We're on slac-policy so we don't need much of what goes below - for now.
+
+
 function slac_int_org_install_tasks($install_state) {
   $tasks = array();
   $tasks['slac_int_org_install_task_demo_content'] = array(
@@ -70,7 +72,7 @@ function slac_int_org_install_task_demo_content() {
   );
   return $batch;
 }
-
+ */
 /**
  * Implements hook_install().
  *
@@ -78,11 +80,11 @@ function slac_int_org_install_task_demo_content() {
  *
  * @see system_install()
  */
-function slac_int_org_install() {
+function slac_policy_install() {
   $file = DRUPAL_ROOT . '/profiles/slac_profiles_shared.inc';
   require_once $file;
 
-  variable_set('install_profile', 'slac_int_org');
+  variable_set('install_profile', 'slac_policy');
 
   slac_profiles_shared_filtered_format();
 
@@ -100,11 +102,11 @@ function slac_int_org_install() {
   );
   user_save($account, $edit);
 
-  variable_set('install_profile', 'slac_int_org');
-  variable_set('distribution_name', 'SLAC Intranet Organization');
+  variable_set('install_profile', 'slac_policy');
+  variable_set('distribution_name', 'SLAC Policy Distribution');
 
-  variable_set('site_name', 'SLAC Intranet Organization');
-  variable_set('site_name_abbreviation', 'IntOrg');
+  variable_set('site_name', 'SLAC Policy');
+  variable_set('site_name_abbreviation', 'AdminGuide');
   variable_set('site_url_address', '2575 Sand Hill Road, Menlo Park, CA 94025');
 
   slac_profiles_shared_place_system_blocks_to_regions();
@@ -117,16 +119,16 @@ function slac_int_org_install() {
     ->execute();
 }
 
-function _slac_int_org_filter_dependencies($dependency) {
+function _slac_policy_filter_dependencies($dependency) {
   return !module_exists($dependency);
 }
 
-function _slac_int_org_enable_module($module, $module_name, &$context) {
+function _slac_policy_enable_module($module, $module_name, &$context) {
   module_enable(array($module), FALSE);
   $context['message'] = st('Installed %module module.', array('%module' => $module_name));
 }
 
-function _slac_int_org_flush_caches($operation, &$context) {
+function _slac_policy_flush_caches($operation, &$context) {
   $context['message'] = t('@operation', array('@operation' => $operation));
   drupal_flush_all_caches();
 }
