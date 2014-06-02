@@ -117,7 +117,7 @@ dependencies[] = blog
 dependencies[] = better_exposed_filters
 dependencies[] = field_redirection
 
-dependencies[] = pp_demo
+;dependencies[] = pp_demo
 
 ; Service catalog
 dependencies[] = support
@@ -155,7 +155,7 @@ dependencies[] = slac_configurations
 
 ;Custom modules
 dependencies[] = slac_site_variables
-dependencies[] = slac_share_block
+;dependencies[] = slac_share_block
 dependencies[] = slac_block_style
 ;dependencies[] = slac_profile_base
 ;dependencies[] = slac_people_slideshow
@@ -164,7 +164,7 @@ dependencies[] = slac_style_guide
 ;dependencies[] = slac_projects
 
 ;Roles
-dependencies[] = slac_extorg_roles
+;dependencies[] = slac_extorg_roles
 
 ;Sidebar block
 dependencies[] = slac_sidebar_block
@@ -210,7 +210,7 @@ dependencies[] = workbench
 dependencies[] = workbench_moderation
 
 ; Workbench settings
-dependencies[] = slac_workbench_settings_eo
+;dependencies[] = slac_workbench_settings_eo
 
 ; Newsletter
 ;dependencies[] = mailsystem
@@ -224,4 +224,4 @@ dependencies[] = slac_google_analytics
 ;dependencies[] = header_menu
 
 ;SLAC Policy
-dependencies[] = slac_policydefault
+dependencies[] = slac_policy_pages
