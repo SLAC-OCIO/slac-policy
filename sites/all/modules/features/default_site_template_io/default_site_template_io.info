@@ -1,7 +1,7 @@
 name = Default Site Template for Int Org profile
 core = 7.x
 package = SLAC
-version = 7.x-1.6
+version = 7.x-1.7
 project = default_site_template_io
 dependencies[] = ctools
 dependencies[] = features

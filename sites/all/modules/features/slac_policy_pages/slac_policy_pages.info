@@ -1,0 +1,7 @@
+name = SLAC Policy Pages
+core = 7.x
+package = SLAC
+version = 7.x-1.0-beta1
+project = slac_policy_pages
+features[features_api][] = api:2
+project path = sites/all/modules/features
