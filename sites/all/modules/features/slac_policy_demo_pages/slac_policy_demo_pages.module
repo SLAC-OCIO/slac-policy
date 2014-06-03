@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the SLAC Policy Demo Pages feature.
+ */
+
+include_once 'slac_policy_demo_pages.features.inc';
