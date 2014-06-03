@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the SLAC Policy Pages feature.
  */
+
+include_once 'slac_policy_pages.features.inc';
