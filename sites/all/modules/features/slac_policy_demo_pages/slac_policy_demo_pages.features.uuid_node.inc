@@ -12,214 +12,28 @@ function slac_policy_demo_pages_uuid_features_default_content() {
 
   $nodes[] = array(
   'uid' => 1,
-  'title' => '1.2 Desktops',
+  'title' => '1.2.1 VPN Connections',
   'log' => '',
   'status' => 1,
   'comment' => 1,
   'promote' => 0,
   'sticky' => 0,
-  'vuuid' => '171db1de-e76e-4d0a-84fd-49664f4380a4',
-  'type' => 'subchapter',
-  'language' => 'und',
-  'created' => 1401818108,
-  'tnid' => 0,
-  'translate' => 0,
-  'uuid' => '0bff9433-1a7d-4d38-9015-4dfacb7a5bd1',
-  'revision_uid' => 1,
-  'body' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p><span style="font-family: arial; font-size: 13px; line-height: normal;">Massa placerat ut auctor in ac placerat tincidunt tortor cursus penatibus? Vut, augue. Pid hac a, parturient egestas! Ac mid. Augue dis et magna odio ut. Tortor, augue lectus nunc, nunc velit lorem tincidunt, mattis turpis pulvinar nisi magna nunc! Turpis ac. Augue lectus, nisi placerat porttitor lundium, aliquet eros vut! Platea odio penatibus purus sit.&nbsp;</span></p>
-',
-        'summary' => '',
-        'format' => 'full_html',
-        'safe_value' => ' <p><span style="font-family: arial; font-size: 13px; line-height: normal;">Massa placerat ut auctor in ac placerat tincidunt tortor cursus penatibus? Vut, augue. Pid hac a, parturient egestas! Ac mid. Augue dis et magna odio ut. Tortor, augue lectus nunc, nunc velit lorem tincidunt, mattis turpis pulvinar nisi magna nunc! Turpis ac. Augue lectus, nisi placerat porttitor lundium, aliquet eros vut! Platea odio penatibus purus sit. </span></p>
- ',
-        'safe_summary' => '  ',
-      ),
-    ),
-  ),
-  'field_parent_chapter' => array(
-    'und' => array(
-      0 => array(
-        'target_id' => 2,
-      ),
-    ),
-  ),
-  'field_subchapter_name' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'Desktops',
-        'format' => NULL,
-        'safe_value' => 'Desktops',
-      ),
-    ),
-  ),
-  'field_subchapter_number' => array(
-    'und' => array(
-      0 => array(
-        'value' => 2,
-      ),
-    ),
-  ),
-  'metatags' => array(),
-  'cid' => 0,
-  'last_comment_name' => NULL,
-  'last_comment_uid' => 1,
-  'comment_count' => 0,
-  'name' => 'admin',
-  'picture' => 0,
-  'data' => 'b:0;',
-  'date' => '2014-06-03 17:55:08 +0000',
-);
-  $nodes[] = array(
-  'uid' => 1,
-  'title' => '2.1 Browser Config',
-  'log' => '',
-  'status' => 1,
-  'comment' => 1,
-  'promote' => 0,
-  'sticky' => 0,
-  'vuuid' => '21c0f2c5-1f73-487f-9c80-93b318fa32c8',
-  'type' => 'subchapter',
-  'language' => 'und',
-  'created' => 1401818201,
-  'tnid' => 0,
-  'translate' => 0,
-  'uuid' => '3a2d4f59-f7ed-429d-ad48-310c55982441',
-  'revision_uid' => 1,
-  'body' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p><span style="font-family: arial; font-size: 13px; line-height: normal;">Massa placerat ut auctor in ac placerat tincidunt tortor cursus penatibus? Vut, augue. Pid hac a, parturient egestas! Ac mid. Augue dis et magna odio ut. Tortor, augue lectus nunc, nunc velit lorem tincidunt, mattis turpis pulvinar nisi magna nunc! Turpis ac. Augue lectus, nisi placerat porttitor lundium, aliquet eros vut! Platea odio penatibus purus sit.&nbsp;</span><span style="font-family: arial; font-size: 13px; line-height: normal;">Massa placerat ut auctor in ac placerat tincidunt tortor cursus penatibus? Vut, augue. Pid hac a, parturient egestas! Ac mid. Augue dis et magna odio ut. Tortor, augue lectus nunc, nunc velit lorem tincidunt, mattis turpis pulvinar nisi magna nunc! Turpis ac. Augue lectus, nisi placerat porttitor lundium, aliquet eros vut! Platea odio penatibus purus sit.&nbsp;</span></p>
-',
-        'summary' => '',
-        'format' => 'full_html',
-        'safe_value' => ' <p><span style="font-family: arial; font-size: 13px; line-height: normal;">Massa placerat ut auctor in ac placerat tincidunt tortor cursus penatibus? Vut, augue. Pid hac a, parturient egestas! Ac mid. Augue dis et magna odio ut. Tortor, augue lectus nunc, nunc velit lorem tincidunt, mattis turpis pulvinar nisi magna nunc! Turpis ac. Augue lectus, nisi placerat porttitor lundium, aliquet eros vut! Platea odio penatibus purus sit. </span><span style="font-family: arial; font-size: 13px; line-height: normal;">Massa placerat ut auctor in ac placerat tincidunt tortor cursus penatibus? Vut, augue. Pid hac a, parturient egestas! Ac mid. Augue dis et magna odio ut. Tortor, augue lectus nunc, nunc velit lorem tincidunt, mattis turpis pulvinar nisi magna nunc! Turpis ac. Augue lectus, nisi placerat porttitor lundium, aliquet eros vut! Platea odio penatibus purus sit. </span></p>
- ',
-        'safe_summary' => '  ',
-      ),
-    ),
-  ),
-  'field_parent_chapter' => array(
-    'und' => array(
-      0 => array(
-        'target_id' => 3,
-      ),
-    ),
-  ),
-  'field_subchapter_name' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'Browser Config',
-        'format' => NULL,
-        'safe_value' => 'Browser Config',
-      ),
-    ),
-  ),
-  'field_subchapter_number' => array(
-    'und' => array(
-      0 => array(
-        'value' => 1,
-      ),
-    ),
-  ),
-  'metatags' => array(),
-  'cid' => 0,
-  'last_comment_name' => NULL,
-  'last_comment_uid' => 1,
-  'comment_count' => 0,
-  'name' => 'admin',
-  'picture' => 0,
-  'data' => 'b:0;',
-  'date' => '2014-06-03 17:56:41 +0000',
-);
-  $nodes[] = array(
-  'uid' => 1,
-  'title' => '2.2 Network Config',
-  'log' => '',
-  'status' => 1,
-  'comment' => 1,
-  'promote' => 0,
-  'sticky' => 0,
-  'vuuid' => 'c55226d6-f87b-4bb8-b95f-fe347d89b690',
-  'type' => 'subchapter',
-  'language' => 'und',
-  'created' => 1401818223,
-  'tnid' => 0,
-  'translate' => 0,
-  'uuid' => '4cab7bd9-46e6-4df8-b5b9-d1ebf239675d',
-  'revision_uid' => 1,
-  'body' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p><span style="font-family: arial; font-size: 13px; line-height: normal;">Massa placerat ut auctor in ac placerat tincidunt tortor cursus penatibus? Vut, augue. Pid hac a, parturient egestas! Ac mid. Augue dis et magna odio ut. Tortor, augue lectus nunc, nunc velit lorem tincidunt, mattis turpis pulvinar nisi magna nunc! Turpis ac. Augue lectus, nisi placerat porttitor lundium, aliquet eros vut! Platea odio penatibus purus sit.&nbsp;</span><span style="font-family: arial; font-size: 13px; line-height: normal;">Massa placerat ut auctor in ac placerat tincidunt tortor cursus penatibus? Vut, augue. Pid hac a, parturient egestas! Ac mid. Augue dis et magna odio ut. Tortor, augue lectus nunc, nunc velit lorem tincidunt, mattis turpis pulvinar nisi magna nunc! Turpis ac. Augue lectus, nisi placerat porttitor lundium, aliquet eros vut! Platea odio penatibus purus sit.&nbsp;</span></p>
-',
-        'summary' => '',
-        'format' => 'full_html',
-        'safe_value' => ' <p><span style="font-family: arial; font-size: 13px; line-height: normal;">Massa placerat ut auctor in ac placerat tincidunt tortor cursus penatibus? Vut, augue. Pid hac a, parturient egestas! Ac mid. Augue dis et magna odio ut. Tortor, augue lectus nunc, nunc velit lorem tincidunt, mattis turpis pulvinar nisi magna nunc! Turpis ac. Augue lectus, nisi placerat porttitor lundium, aliquet eros vut! Platea odio penatibus purus sit. </span><span style="font-family: arial; font-size: 13px; line-height: normal;">Massa placerat ut auctor in ac placerat tincidunt tortor cursus penatibus? Vut, augue. Pid hac a, parturient egestas! Ac mid. Augue dis et magna odio ut. Tortor, augue lectus nunc, nunc velit lorem tincidunt, mattis turpis pulvinar nisi magna nunc! Turpis ac. Augue lectus, nisi placerat porttitor lundium, aliquet eros vut! Platea odio penatibus purus sit. </span></p>
- ',
-        'safe_summary' => '  ',
-      ),
-    ),
-  ),
-  'field_parent_chapter' => array(
-    'und' => array(
-      0 => array(
-        'target_id' => 3,
-      ),
-    ),
-  ),
-  'field_subchapter_name' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'Network Config',
-        'format' => NULL,
-        'safe_value' => 'Network Config',
-      ),
-    ),
-  ),
-  'field_subchapter_number' => array(
-    'und' => array(
-      0 => array(
-        'value' => 2,
-      ),
-    ),
-  ),
-  'metatags' => array(),
-  'cid' => 0,
-  'last_comment_name' => NULL,
-  'last_comment_uid' => 1,
-  'comment_count' => 0,
-  'name' => 'admin',
-  'picture' => 0,
-  'data' => 'b:0;',
-  'date' => '2014-06-03 17:57:03 +0000',
-);
-  $nodes[] = array(
-  'uid' => 1,
-  'title' => '1.1.1 Obaining a Laptop',
-  'log' => '',
-  'status' => 1,
-  'comment' => 1,
-  'promote' => 0,
-  'sticky' => 0,
-  'vuuid' => '911a8a57-ed2f-404d-b19e-847b470b6665',
+  'vuuid' => '3618133a-e54d-414b-9b6a-68efb88ad1c7',
   'type' => 'handbook_page',
   'language' => 'und',
-  'created' => 1401818518,
+  'created' => 1401830764,
   'tnid' => 0,
   'translate' => 0,
-  'uuid' => '588903c2-72aa-4bec-94be-cac9a21ad37d',
+  'uuid' => '072d4a58-ae61-4483-b299-064e98363a76',
   'revision_uid' => 1,
   'body' => array(
     'und' => array(
       0 => array(
-        'value' => '<p><span style="font-family: arial; font-size: 13px; line-height: normal;">Massa placerat ut auctor in ac placerat tincidunt tortor cursus penatibus? Vut, augue. Pid hac a, parturient egestas! Ac mid. Augue dis et magna odio ut. Tortor, augue lectus nunc, nunc velit lorem tincidunt, mattis turpis pulvinar nisi magna nunc! Turpis ac. Augue lectus, nisi placerat porttitor lundium, aliquet eros vut! Platea odio penatibus purus sit.&nbsp;</span><span style="font-family: arial; font-size: 13px; line-height: normal;">Massa placerat ut auctor in ac placerat tincidunt tortor cursus penatibus? Vut, augue. Pid hac a, parturient egestas! Ac mid. Augue dis et magna odio ut. Tortor, augue lectus nunc, nunc velit lorem tincidunt, mattis turpis pulvinar nisi magna nunc! Turpis ac. Augue lectus, nisi placerat porttitor lundium, aliquet eros vut! Platea odio penatibus purus sit.&nbsp;</span></p>
+        'value' => '<p><span style="font-family: arial; font-size: 13px; line-height: normal;">Diam vut pulvinar integer dignissim a, tristique penatibus? Cursus ac elementum rhoncus, arcu elit mid massa lacus, lacus natoque lorem, aliquet a facilisis massa sagittis cras. Ut placerat sed cras, integer cras! Augue, porta nunc hac porta placerat nunc turpis urna magnis? Lacus tortor, porta, sagittis enim sit placerat! Turpis dis massa rhoncus tincidunt? Vut integer!&nbsp;</span></p>
 ',
         'summary' => '',
         'format' => 'full_html',
-        'safe_value' => ' <p><span style="font-family: arial; font-size: 13px; line-height: normal;">Massa placerat ut auctor in ac placerat tincidunt tortor cursus penatibus? Vut, augue. Pid hac a, parturient egestas! Ac mid. Augue dis et magna odio ut. Tortor, augue lectus nunc, nunc velit lorem tincidunt, mattis turpis pulvinar nisi magna nunc! Turpis ac. Augue lectus, nisi placerat porttitor lundium, aliquet eros vut! Platea odio penatibus purus sit. </span><span style="font-family: arial; font-size: 13px; line-height: normal;">Massa placerat ut auctor in ac placerat tincidunt tortor cursus penatibus? Vut, augue. Pid hac a, parturient egestas! Ac mid. Augue dis et magna odio ut. Tortor, augue lectus nunc, nunc velit lorem tincidunt, mattis turpis pulvinar nisi magna nunc! Turpis ac. Augue lectus, nisi placerat porttitor lundium, aliquet eros vut! Platea odio penatibus purus sit. </span></p>
+        'safe_value' => ' <p><span style="font-family: arial; font-size: 13px; line-height: normal;">Diam vut pulvinar integer dignissim a, tristique penatibus? Cursus ac elementum rhoncus, arcu elit mid massa lacus, lacus natoque lorem, aliquet a facilisis massa sagittis cras. Ut placerat sed cras, integer cras! Augue, porta nunc hac porta placerat nunc turpis urna magnis? Lacus tortor, porta, sagittis enim sit placerat! Turpis dis massa rhoncus tincidunt? Vut integer! </span></p>
  ',
         'safe_summary' => '  ',
       ),
@@ -228,10 +42,10 @@ function slac_policy_demo_pages_uuid_features_default_content() {
   'field_hbp_applicability' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>Everyone</p>
+        'value' => '<p>Everyone using a laptop</p>
 ',
         'format' => 'full_html',
-        'safe_value' => ' <p>Everyone</p>
+        'safe_value' => ' <p>Everyone using a laptop</p>
  ',
       ),
     ),
@@ -240,10 +54,10 @@ function slac_policy_demo_pages_uuid_features_default_content() {
   'field_hbp_authority' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>CIO</p>
+        'value' => '<p>OCIO</p>
 ',
         'format' => 'full_html',
-        'safe_value' => ' <p>CIO</p>
+        'safe_value' => ' <p>OCIO</p>
  ',
       ),
     ),
@@ -259,7 +73,17 @@ function slac_policy_demo_pages_uuid_features_default_content() {
       ),
     ),
   ),
-  'field_hbp_footnote' => array(),
+  'field_hbp_footnote' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p><span style="font-family: arial; font-size: 13px; line-height: normal;">Diam vut pulvinar integer dignissim a, tristique penatibus? Cursus ac elementum rhoncus, arcu elit mid massa lacus, lacus natoque lorem, aliquet a facilisis massa sagittis cras. Ut placerat sed cras, integer cras! Augue, porta nunc hac porta placerat nunc turpis urna magnis? Lacus tortor, porta, sagittis enim sit placerat! Turpis dis massa rhoncus tincidunt? Vut integer!&nbsp;</span></p>
+',
+        'format' => 'full_html',
+        'safe_value' => ' <p><span style="font-family: arial; font-size: 13px; line-height: normal;">Diam vut pulvinar integer dignissim a, tristique penatibus? Cursus ac elementum rhoncus, arcu elit mid massa lacus, lacus natoque lorem, aliquet a facilisis massa sagittis cras. Ut placerat sed cras, integer cras! Augue, porta nunc hac porta placerat nunc turpis urna magnis? Lacus tortor, porta, sagittis enim sit placerat! Turpis dis massa rhoncus tincidunt? Vut integer! </span></p>
+ ',
+      ),
+    ),
+  ),
   'field_hbp_hide_bullet_formatting' => array(
     'und' => array(
       0 => array(
@@ -291,16 +115,22 @@ function slac_policy_demo_pages_uuid_features_default_content() {
       ),
     ),
   ),
-  'field_hbp_related' => array(),
+  'field_hbp_related' => array(
+    'und' => array(
+      0 => array(
+        'target_id' => 5,
+      ),
+    ),
+  ),
   'field_hbp_subsection' => array(
     'und' => array(
       0 => array(
-        'value' => 1,
-        'revision_id' => 1,
+        'value' => 5,
+        'revision_id' => 5,
       ),
       1 => array(
-        'value' => 2,
-        'revision_id' => 2,
+        'value' => 6,
+        'revision_id' => 6,
       ),
     ),
   ),
@@ -314,9 +144,9 @@ function slac_policy_demo_pages_uuid_features_default_content() {
   'field_hbp_title' => array(
     'und' => array(
       0 => array(
-        'value' => 'Obaining a Laptop',
+        'value' => 'VPN Connections',
         'format' => NULL,
-        'safe_value' => 'Obaining a Laptop',
+        'safe_value' => 'VPN Connections',
       ),
     ),
   ),
@@ -324,7 +154,7 @@ function slac_policy_demo_pages_uuid_features_default_content() {
     'und' => array(
       0 => array(
         'url' => 'http://google.com',
-        'title' => 'Documents on CDMS ',
+        'title' => 'This is a link to a document',
         'attributes' => array(),
       ),
     ),
@@ -344,94 +174,32 @@ function slac_policy_demo_pages_uuid_features_default_content() {
   'name' => 'admin',
   'picture' => 0,
   'data' => 'b:0;',
-  'date' => '2014-06-03 18:01:58 +0000',
+  'date' => '2014-06-03 21:26:04 +0000',
 );
   $nodes[] = array(
   'uid' => 1,
-  'title' => '1.1 Laptops',
+  'title' => '1.1.1 Browser Security',
   'log' => '',
   'status' => 1,
   'comment' => 1,
   'promote' => 0,
   'sticky' => 0,
-  'vuuid' => '94d99c96-d2bd-4832-a40c-28d7a80a34d5',
-  'type' => 'subchapter',
-  'language' => 'und',
-  'created' => 1401818082,
-  'tnid' => 0,
-  'translate' => 0,
-  'uuid' => '8ebf85a8-de0d-4d88-b09b-094bce360c68',
-  'revision_uid' => 1,
-  'body' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<p><span style="font-family: arial; font-size: 13px; line-height: normal;">Massa placerat ut auctor in ac placerat tincidunt tortor cursus penatibus? Vut, augue. Pid hac a, parturient egestas! Ac mid. Augue dis et magna odio ut. Tortor, augue lectus nunc, nunc velit lorem tincidunt, mattis turpis pulvinar nisi magna nunc! Turpis ac. Augue lectus, nisi placerat porttitor lundium, aliquet eros vut! Platea odio penatibus purus sit.&nbsp;</span><span style="font-family: arial; font-size: 13px; line-height: normal;">Massa placerat ut auctor in ac placerat tincidunt tortor cursus penatibus? Vut, augue. Pid hac a, parturient egestas! Ac mid. Augue dis et magna odio ut. Tortor, augue lectus nunc, nunc velit lorem tincidunt, mattis turpis pulvinar nisi magna nunc! Turpis ac. Augue lectus, nisi placerat porttitor lundium, aliquet eros vut! Platea odio penatibus purus sit.&nbsp;</span></p>
-',
-        'summary' => '',
-        'format' => 'full_html',
-        'safe_value' => ' <p><span style="font-family: arial; font-size: 13px; line-height: normal;">Massa placerat ut auctor in ac placerat tincidunt tortor cursus penatibus? Vut, augue. Pid hac a, parturient egestas! Ac mid. Augue dis et magna odio ut. Tortor, augue lectus nunc, nunc velit lorem tincidunt, mattis turpis pulvinar nisi magna nunc! Turpis ac. Augue lectus, nisi placerat porttitor lundium, aliquet eros vut! Platea odio penatibus purus sit. </span><span style="font-family: arial; font-size: 13px; line-height: normal;">Massa placerat ut auctor in ac placerat tincidunt tortor cursus penatibus? Vut, augue. Pid hac a, parturient egestas! Ac mid. Augue dis et magna odio ut. Tortor, augue lectus nunc, nunc velit lorem tincidunt, mattis turpis pulvinar nisi magna nunc! Turpis ac. Augue lectus, nisi placerat porttitor lundium, aliquet eros vut! Platea odio penatibus purus sit. </span></p>
- ',
-        'safe_summary' => '  ',
-      ),
-    ),
-  ),
-  'field_parent_chapter' => array(
-    'und' => array(
-      0 => array(
-        'target_id' => 2,
-      ),
-    ),
-  ),
-  'field_subchapter_name' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'Laptops',
-        'format' => NULL,
-        'safe_value' => 'Laptops',
-      ),
-    ),
-  ),
-  'field_subchapter_number' => array(
-    'und' => array(
-      0 => array(
-        'value' => 1,
-      ),
-    ),
-  ),
-  'metatags' => array(),
-  'cid' => 0,
-  'last_comment_name' => NULL,
-  'last_comment_uid' => 1,
-  'comment_count' => 0,
-  'name' => 'admin',
-  'picture' => 0,
-  'data' => 'b:0;',
-  'date' => '2014-06-03 17:54:42 +0000',
-);
-  $nodes[] = array(
-  'uid' => 1,
-  'title' => '1.2.1 Obtaining a Desktop',
-  'log' => '',
-  'status' => 1,
-  'comment' => 1,
-  'promote' => 0,
-  'sticky' => 0,
-  'vuuid' => '404f9b84-b287-45f9-9d30-1c8a8db30eed',
+  'vuuid' => 'f8b2f5b1-dc59-4b5a-871a-9db6994eff74',
   'type' => 'handbook_page',
   'language' => 'und',
-  'created' => 1401818704,
+  'created' => 1401830630,
   'tnid' => 0,
   'translate' => 0,
-  'uuid' => '97def906-e136-47e1-b6ba-39ae930ffae6',
+  'uuid' => '5eddb85a-0396-4fc9-bb5d-2177be353f53',
   'revision_uid' => 1,
   'body' => array(
     'und' => array(
       0 => array(
-        'value' => '<p><span style="font-family: arial; font-size: 13px; line-height: normal;">Massa placerat ut auctor in ac placerat tincidunt tortor cursus penatibus? Vut, augue. Pid hac a, parturient egestas! Ac mid. Augue dis et magna odio ut. Tortor, augue lectus nunc, nunc velit lorem tincidunt, mattis turpis pulvinar nisi magna nunc! Turpis ac. Augue lectus, nisi placerat porttitor lundium, aliquet eros vut! Platea odio penatibus purus sit.&nbsp;</span><span style="font-family: arial; font-size: 13px; line-height: normal;">Massa placerat ut auctor in ac placerat tincidunt tortor cursus penatibus? Vut, augue. Pid hac a, parturient egestas! Ac mid. Augue dis et magna odio ut. Tortor, augue lectus nunc, nunc velit lorem tincidunt, mattis turpis pulvinar nisi magna nunc! Turpis ac. Augue lectus, nisi placerat porttitor lundium, aliquet eros vut! Platea odio penatibus purus sit.&nbsp;</span></p>
+        'value' => '<p><span style="font-family: arial; font-size: 13px; line-height: normal;">Diam vut pulvinar integer dignissim a, tristique penatibus? Cursus ac elementum rhoncus, arcu elit mid massa lacus, lacus natoque lorem, aliquet a facilisis massa sagittis cras. Ut placerat sed cras, integer cras! Augue, porta nunc hac porta placerat nunc turpis urna magnis? Lacus tortor, porta, sagittis enim sit placerat! Turpis dis massa rhoncus tincidunt? Vut integer!&nbsp;</span><span style="font-family: arial; font-size: 13px; line-height: normal;">Diam vut pulvinar integer dignissim a, tristique penatibus? Cursus ac elementum rhoncus, arcu elit mid massa lacus, lacus natoque lorem, aliquet a facilisis massa sagittis cras. Ut placerat sed cras, integer cras! Augue, porta nunc hac porta placerat nunc turpis urna magnis? Lacus tortor, porta, sagittis enim sit placerat! Turpis dis massa rhoncus tincidunt? Vut integer!&nbsp;</span></p>
 ',
         'summary' => '',
         'format' => 'full_html',
-        'safe_value' => ' <p><span style="font-family: arial; font-size: 13px; line-height: normal;">Massa placerat ut auctor in ac placerat tincidunt tortor cursus penatibus? Vut, augue. Pid hac a, parturient egestas! Ac mid. Augue dis et magna odio ut. Tortor, augue lectus nunc, nunc velit lorem tincidunt, mattis turpis pulvinar nisi magna nunc! Turpis ac. Augue lectus, nisi placerat porttitor lundium, aliquet eros vut! Platea odio penatibus purus sit. </span><span style="font-family: arial; font-size: 13px; line-height: normal;">Massa placerat ut auctor in ac placerat tincidunt tortor cursus penatibus? Vut, augue. Pid hac a, parturient egestas! Ac mid. Augue dis et magna odio ut. Tortor, augue lectus nunc, nunc velit lorem tincidunt, mattis turpis pulvinar nisi magna nunc! Turpis ac. Augue lectus, nisi placerat porttitor lundium, aliquet eros vut! Platea odio penatibus purus sit. </span></p>
+        'safe_value' => ' <p><span style="font-family: arial; font-size: 13px; line-height: normal;">Diam vut pulvinar integer dignissim a, tristique penatibus? Cursus ac elementum rhoncus, arcu elit mid massa lacus, lacus natoque lorem, aliquet a facilisis massa sagittis cras. Ut placerat sed cras, integer cras! Augue, porta nunc hac porta placerat nunc turpis urna magnis? Lacus tortor, porta, sagittis enim sit placerat! Turpis dis massa rhoncus tincidunt? Vut integer! </span><span style="font-family: arial; font-size: 13px; line-height: normal;">Diam vut pulvinar integer dignissim a, tristique penatibus? Cursus ac elementum rhoncus, arcu elit mid massa lacus, lacus natoque lorem, aliquet a facilisis massa sagittis cras. Ut placerat sed cras, integer cras! Augue, porta nunc hac porta placerat nunc turpis urna magnis? Lacus tortor, porta, sagittis enim sit placerat! Turpis dis massa rhoncus tincidunt? Vut integer! </span></p>
  ',
         'safe_summary' => '  ',
       ),
@@ -440,10 +208,10 @@ function slac_policy_demo_pages_uuid_features_default_content() {
   'field_hbp_applicability' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>Everyone</p>
+        'value' => '<p>All users&nbsp;</p>
 ',
         'format' => 'full_html',
-        'safe_value' => ' <p>Everyone</p>
+        'safe_value' => ' <p>All users </p>
  ',
       ),
     ),
@@ -452,10 +220,10 @@ function slac_policy_demo_pages_uuid_features_default_content() {
   'field_hbp_authority' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>CIO</p>
+        'value' => '<p>OCIO</p>
 ',
         'format' => 'full_html',
-        'safe_value' => ' <p>CIO</p>
+        'safe_value' => ' <p>OCIO</p>
  ',
       ),
     ),
@@ -471,7 +239,17 @@ function slac_policy_demo_pages_uuid_features_default_content() {
       ),
     ),
   ),
-  'field_hbp_footnote' => array(),
+  'field_hbp_footnote' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p><span style="font-family: arial; font-size: 13px; line-height: normal;">Diam vut pulvinar integer dignissim a, tristique penatibus? Cursus ac elementum rhoncus, arcu elit mid massa lacus, lacus natoque lorem, aliquet a facilisis massa sagittis cras. Ut placerat sed cras, integer cras! Augue, porta nunc hac porta placerat nunc turpis urna magnis? Lacus tortor, porta, sagittis enim sit placerat! Turpis dis massa rhoncus tincidunt? Vut integer!&nbsp;</span></p>
+',
+        'format' => 'full_html',
+        'safe_value' => ' <p><span style="font-family: arial; font-size: 13px; line-height: normal;">Diam vut pulvinar integer dignissim a, tristique penatibus? Cursus ac elementum rhoncus, arcu elit mid massa lacus, lacus natoque lorem, aliquet a facilisis massa sagittis cras. Ut placerat sed cras, integer cras! Augue, porta nunc hac porta placerat nunc turpis urna magnis? Lacus tortor, porta, sagittis enim sit placerat! Turpis dis massa rhoncus tincidunt? Vut integer! </span></p>
+ ',
+      ),
+    ),
+  ),
   'field_hbp_hide_bullet_formatting' => array(
     'und' => array(
       0 => array(
@@ -499,22 +277,28 @@ function slac_policy_demo_pages_uuid_features_default_content() {
   'field_hbp_parent_subchapter' => array(
     'und' => array(
       0 => array(
-        'target_id' => 5,
+        'target_id' => 3,
       ),
     ),
   ),
-  'field_hbp_related' => array(
-    'und' => array(
-      0 => array(
-        'target_id' => 8,
-      ),
-    ),
-  ),
+  'field_hbp_related' => array(),
   'field_hbp_subsection' => array(
     'und' => array(
       0 => array(
+        'value' => 1,
+        'revision_id' => 1,
+      ),
+      1 => array(
+        'value' => 2,
+        'revision_id' => 2,
+      ),
+      2 => array(
         'value' => 3,
         'revision_id' => 3,
+      ),
+      3 => array(
+        'value' => 4,
+        'revision_id' => 4,
       ),
     ),
   ),
@@ -528,9 +312,9 @@ function slac_policy_demo_pages_uuid_features_default_content() {
   'field_hbp_title' => array(
     'und' => array(
       0 => array(
-        'value' => 'Obtaining a Desktop',
+        'value' => 'Browser Security',
         'format' => NULL,
-        'safe_value' => 'Obtaining a Desktop',
+        'safe_value' => 'Browser Security',
       ),
     ),
   ),
@@ -538,7 +322,7 @@ function slac_policy_demo_pages_uuid_features_default_content() {
     'und' => array(
       0 => array(
         'url' => 'http://www.google.com',
-        'title' => 'Link to Doc on CDMS',
+        'title' => 'Link to corresponding CDMS Doc',
         'attributes' => array(),
       ),
     ),
@@ -558,32 +342,32 @@ function slac_policy_demo_pages_uuid_features_default_content() {
   'name' => 'admin',
   'picture' => 0,
   'data' => 'b:0;',
-  'date' => '2014-06-03 18:05:04 +0000',
+  'date' => '2014-06-03 21:23:50 +0000',
 );
   $nodes[] = array(
   'uid' => 1,
-  'title' => '1. Computing General',
+  'title' => '1. Basic Security',
   'log' => '',
   'status' => 1,
   'comment' => 1,
   'promote' => 0,
   'sticky' => 0,
-  'vuuid' => '801ce4e1-772a-446e-83ba-3e6804c2062c',
+  'vuuid' => '5c4d6ea7-f322-4c15-8b10-6e7be4ab0d50',
   'type' => 'chapter',
   'language' => 'und',
-  'created' => 1401818007,
+  'created' => 1401830435,
   'tnid' => 0,
   'translate' => 0,
-  'uuid' => 'b47533bf-0903-430d-80f4-5b9f2fb2ddc7',
+  'uuid' => '84613a00-96f7-449e-a7c4-ba979845591a',
   'revision_uid' => 1,
   'body' => array(
     'und' => array(
       0 => array(
-        'value' => '<p><span style="font-family: arial; font-size: 13px; line-height: normal;">Massa placerat ut auctor in ac placerat tincidunt tortor cursus penatibus? Vut, augue. Pid hac a, parturient egestas! Ac mid. Augue dis et magna odio ut. Tortor, augue lectus nunc, nunc velit lorem tincidunt, mattis turpis pulvinar nisi magna nunc! Turpis ac. Augue lectus, nisi placerat porttitor lundium, aliquet eros vut! Platea odio penatibus purus sit.&nbsp;</span><span style="font-family: arial; font-size: 13px; line-height: normal;">Massa placerat ut auctor in ac placerat tincidunt tortor cursus penatibus? Vut, augue. Pid hac a, parturient egestas! Ac mid. Augue dis et magna odio ut. Tortor, augue lectus nunc, nunc velit lorem tincidunt, mattis turpis pulvinar nisi magna nunc! Turpis ac. Augue lectus, nisi placerat porttitor lundium, aliquet eros vut! Platea odio penatibus purus sit.&nbsp;</span></p>
+        'value' => '<p><span style="font-family: arial; font-size: 13px; line-height: normal;">Diam vut pulvinar integer dignissim a, tristique penatibus? Cursus ac elementum rhoncus, arcu elit mid massa lacus, lacus natoque lorem, aliquet a facilisis massa sagittis cras. Ut placerat sed cras, integer cras! Augue, porta nunc hac porta placerat nunc turpis urna magnis? Lacus tortor, porta, sagittis enim sit placerat! Turpis dis massa rhoncus tincidunt? Vut integer!&nbsp;</span></p>
 ',
         'summary' => '',
         'format' => 'full_html',
-        'safe_value' => ' <p><span style="font-family: arial; font-size: 13px; line-height: normal;">Massa placerat ut auctor in ac placerat tincidunt tortor cursus penatibus? Vut, augue. Pid hac a, parturient egestas! Ac mid. Augue dis et magna odio ut. Tortor, augue lectus nunc, nunc velit lorem tincidunt, mattis turpis pulvinar nisi magna nunc! Turpis ac. Augue lectus, nisi placerat porttitor lundium, aliquet eros vut! Platea odio penatibus purus sit. </span><span style="font-family: arial; font-size: 13px; line-height: normal;">Massa placerat ut auctor in ac placerat tincidunt tortor cursus penatibus? Vut, augue. Pid hac a, parturient egestas! Ac mid. Augue dis et magna odio ut. Tortor, augue lectus nunc, nunc velit lorem tincidunt, mattis turpis pulvinar nisi magna nunc! Turpis ac. Augue lectus, nisi placerat porttitor lundium, aliquet eros vut! Platea odio penatibus purus sit. </span></p>
+        'safe_value' => ' <p><span style="font-family: arial; font-size: 13px; line-height: normal;">Diam vut pulvinar integer dignissim a, tristique penatibus? Cursus ac elementum rhoncus, arcu elit mid massa lacus, lacus natoque lorem, aliquet a facilisis massa sagittis cras. Ut placerat sed cras, integer cras! Augue, porta nunc hac porta placerat nunc turpis urna magnis? Lacus tortor, porta, sagittis enim sit placerat! Turpis dis massa rhoncus tincidunt? Vut integer! </span></p>
  ',
         'safe_summary' => '  ',
       ),
@@ -607,9 +391,9 @@ function slac_policy_demo_pages_uuid_features_default_content() {
   'field_chapter_title' => array(
     'und' => array(
       0 => array(
-        'value' => 'Computing General',
+        'value' => 'Basic Security',
         'format' => NULL,
-        'safe_value' => 'Computing General',
+        'safe_value' => 'Basic Security',
       ),
     ),
   ),
@@ -621,32 +405,32 @@ function slac_policy_demo_pages_uuid_features_default_content() {
   'name' => 'admin',
   'picture' => 0,
   'data' => 'b:0;',
-  'date' => '2014-06-03 17:53:27 +0000',
+  'date' => '2014-06-03 21:20:35 +0000',
 );
   $nodes[] = array(
   'uid' => 1,
-  'title' => 'Cyber ',
+  'title' => 'Cyber',
   'log' => '',
   'status' => 1,
   'comment' => 1,
   'promote' => 0,
   'sticky' => 0,
-  'vuuid' => '02eeb8e6-dd8c-46e8-846e-cff9a9c8aaab',
+  'vuuid' => '970cee00-aecf-42de-9ca8-1d068c9838fa',
   'type' => 'handbook',
   'language' => 'und',
-  'created' => 1401817921,
+  'created' => 1401830393,
   'tnid' => 0,
   'translate' => 0,
-  'uuid' => 'b53cd035-192b-4a6c-9c48-c663277756e0',
+  'uuid' => '9fdef560-668a-4405-b173-40d6b869a10f',
   'revision_uid' => 1,
   'body' => array(
     'und' => array(
       0 => array(
-        'value' => '<p><span style="font-family: arial; font-size: 13px; line-height: normal;">Massa placerat ut auctor in ac placerat tincidunt tortor cursus penatibus? Vut, augue. Pid hac a, parturient egestas! Ac mid. Augue dis et magna odio ut. Tortor, augue lectus nunc, nunc velit lorem tincidunt, mattis turpis pulvinar nisi magna nunc! Turpis ac. Augue lectus, nisi placerat porttitor lundium, aliquet eros vut! Platea odio penatibus purus sit.&nbsp;</span></p>
+        'value' => '<p><span style="font-family: arial; font-size: 13px; line-height: normal;">Diam vut pulvinar integer dignissim a, tristique penatibus? Cursus ac elementum rhoncus, arcu elit mid massa lacus, lacus natoque lorem, aliquet a facilisis massa sagittis cras. Ut placerat sed cras, integer cras! Augue, porta nunc hac porta placerat nunc turpis urna magnis? Lacus tortor, porta, sagittis enim sit placerat! Turpis dis massa rhoncus tincidunt? Vut integer!&nbsp;</span></p>
 ',
         'summary' => '',
         'format' => 'full_html',
-        'safe_value' => ' <p><span style="font-family: arial; font-size: 13px; line-height: normal;">Massa placerat ut auctor in ac placerat tincidunt tortor cursus penatibus? Vut, augue. Pid hac a, parturient egestas! Ac mid. Augue dis et magna odio ut. Tortor, augue lectus nunc, nunc velit lorem tincidunt, mattis turpis pulvinar nisi magna nunc! Turpis ac. Augue lectus, nisi placerat porttitor lundium, aliquet eros vut! Platea odio penatibus purus sit. </span></p>
+        'safe_value' => ' <p><span style="font-family: arial; font-size: 13px; line-height: normal;">Diam vut pulvinar integer dignissim a, tristique penatibus? Cursus ac elementum rhoncus, arcu elit mid massa lacus, lacus natoque lorem, aliquet a facilisis massa sagittis cras. Ut placerat sed cras, integer cras! Augue, porta nunc hac porta placerat nunc turpis urna magnis? Lacus tortor, porta, sagittis enim sit placerat! Turpis dis massa rhoncus tincidunt? Vut integer! </span></p>
  ',
         'safe_summary' => '  ',
       ),
@@ -660,61 +444,122 @@ function slac_policy_demo_pages_uuid_features_default_content() {
   'name' => 'admin',
   'picture' => 0,
   'data' => 'b:0;',
-  'date' => '2014-06-03 17:52:01 +0000',
+  'date' => '2014-06-03 21:19:53 +0000',
 );
   $nodes[] = array(
   'uid' => 1,
-  'title' => '2. Security',
+  'title' => '1.1 Securing Desktop',
   'log' => '',
   'status' => 1,
-  'comment' => 1,
+  'comment' => 2,
   'promote' => 0,
   'sticky' => 0,
-  'vuuid' => '7bd62282-4385-4d52-a166-f4d9a1e47685',
-  'type' => 'chapter',
+  'vuuid' => '5d3f944b-227e-4400-846e-bcacd629ae9d',
+  'type' => 'subchapter',
   'language' => 'und',
-  'created' => 1401818057,
+  'created' => 1401830462,
   'tnid' => 0,
   'translate' => 0,
-  'uuid' => 'd1597e0f-6c61-4b6e-af7f-3097cd8f4bcf',
+  'uuid' => 'e237babb-522e-441f-934f-85f079748bc6',
   'revision_uid' => 1,
   'body' => array(
     'und' => array(
       0 => array(
-        'value' => '<p><span style="font-family: arial; font-size: 13px; line-height: normal;">Massa placerat ut auctor in ac placerat tincidunt tortor cursus penatibus? Vut, augue. Pid hac a, parturient egestas! Ac mid. Augue dis et magna odio ut. Tortor, augue lectus nunc, nunc velit lorem tincidunt, mattis turpis pulvinar nisi magna nunc! Turpis ac. Augue lectus, nisi placerat porttitor lundium, aliquet eros vut! Platea odio penatibus purus sit.&nbsp;</span></p>
+        'value' => '<p><span style="font-family: arial; font-size: 13px; line-height: normal;">Diam vut pulvinar integer dignissim a, tristique penatibus? Cursus ac elementum rhoncus, arcu elit mid massa lacus, lacus natoque lorem, aliquet a facilisis massa sagittis cras. Ut placerat sed cras, integer cras! Augue, porta nunc hac porta placerat nunc turpis urna magnis? Lacus tortor, porta, sagittis enim sit placerat! Turpis dis massa rhoncus tincidunt? Vut integer!&nbsp;</span></p>
 ',
         'summary' => '',
         'format' => 'full_html',
-        'safe_value' => ' <p><span style="font-family: arial; font-size: 13px; line-height: normal;">Massa placerat ut auctor in ac placerat tincidunt tortor cursus penatibus? Vut, augue. Pid hac a, parturient egestas! Ac mid. Augue dis et magna odio ut. Tortor, augue lectus nunc, nunc velit lorem tincidunt, mattis turpis pulvinar nisi magna nunc! Turpis ac. Augue lectus, nisi placerat porttitor lundium, aliquet eros vut! Platea odio penatibus purus sit. </span></p>
+        'safe_value' => ' <p><span style="font-family: arial; font-size: 13px; line-height: normal;">Diam vut pulvinar integer dignissim a, tristique penatibus? Cursus ac elementum rhoncus, arcu elit mid massa lacus, lacus natoque lorem, aliquet a facilisis massa sagittis cras. Ut placerat sed cras, integer cras! Augue, porta nunc hac porta placerat nunc turpis urna magnis? Lacus tortor, porta, sagittis enim sit placerat! Turpis dis massa rhoncus tincidunt? Vut integer! </span></p>
  ',
         'safe_summary' => '  ',
       ),
     ),
   ),
-  'field_chapter_handbook' => array(
+  'field_parent_chapter' => array(
     'und' => array(
       0 => array(
-        'target_id' => 1,
+        'target_id' => 2,
       ),
     ),
   ),
-  'field_chapter_image' => array(),
-  'field_chapter_number' => array(
+  'field_subchapter_name' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'Securing Desktop',
+        'format' => NULL,
+        'safe_value' => 'Securing Desktop',
+      ),
+    ),
+  ),
+  'field_subchapter_number' => array(
+    'und' => array(
+      0 => array(
+        'value' => 1,
+      ),
+    ),
+  ),
+  'metatags' => array(),
+  'cid' => 0,
+  'last_comment_name' => NULL,
+  'last_comment_uid' => 1,
+  'comment_count' => 0,
+  'name' => 'admin',
+  'picture' => 0,
+  'data' => 'b:0;',
+  'date' => '2014-06-03 21:21:02 +0000',
+);
+  $nodes[] = array(
+  'uid' => 1,
+  'title' => '1.2 Securing Laptops',
+  'log' => '',
+  'status' => 1,
+  'comment' => 2,
+  'promote' => 0,
+  'sticky' => 0,
+  'vuuid' => '1243053b-e88e-4e5d-9e67-d64916f72d8e',
+  'type' => 'subchapter',
+  'language' => 'und',
+  'created' => 1401830487,
+  'tnid' => 0,
+  'translate' => 0,
+  'uuid' => 'f4bceba9-d1e2-4970-bb77-d12e0c813252',
+  'revision_uid' => 1,
+  'body' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<p><span style="font-family: arial; font-size: 13px; line-height: normal;">Diam vut pulvinar integer dignissim a, tristique penatibus? Cursus ac elementum rhoncus, arcu elit mid massa lacus, lacus natoque lorem, aliquet a facilisis massa sagittis cras. Ut placerat sed cras, integer cras! Augue, porta nunc hac porta placerat nunc turpis urna magnis? Lacus tortor, porta, sagittis enim sit placerat! Turpis dis massa rhoncus tincidunt? Vut integer!&nbsp;</span></p>
+',
+        'summary' => '',
+        'format' => 'full_html',
+        'safe_value' => ' <p><span style="font-family: arial; font-size: 13px; line-height: normal;">Diam vut pulvinar integer dignissim a, tristique penatibus? Cursus ac elementum rhoncus, arcu elit mid massa lacus, lacus natoque lorem, aliquet a facilisis massa sagittis cras. Ut placerat sed cras, integer cras! Augue, porta nunc hac porta placerat nunc turpis urna magnis? Lacus tortor, porta, sagittis enim sit placerat! Turpis dis massa rhoncus tincidunt? Vut integer! </span></p>
+ ',
+        'safe_summary' => '  ',
+      ),
+    ),
+  ),
+  'field_parent_chapter' => array(
+    'und' => array(
+      0 => array(
+        'target_id' => 2,
+      ),
+    ),
+  ),
+  'field_subchapter_name' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'Securing Laptops',
+        'format' => NULL,
+        'safe_value' => 'Securing Laptops',
+      ),
+    ),
+  ),
+  'field_subchapter_number' => array(
     'und' => array(
       0 => array(
         'value' => 2,
       ),
     ),
   ),
-  'field_chapter_title' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'Security',
-        'format' => NULL,
-        'safe_value' => 'Security',
-      ),
-    ),
-  ),
   'metatags' => array(),
   'cid' => 0,
   'last_comment_name' => NULL,
@@ -723,7 +568,7 @@ function slac_policy_demo_pages_uuid_features_default_content() {
   'name' => 'admin',
   'picture' => 0,
   'data' => 'b:0;',
-  'date' => '2014-06-03 17:54:17 +0000',
+  'date' => '2014-06-03 21:21:27 +0000',
 );
   return $nodes;
 }
