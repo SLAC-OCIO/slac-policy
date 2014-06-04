@@ -159,3 +159,5 @@ dependencies[] = stanford_handbook
 ;Admin Pieces
 ;dependencies[] = adminimal_theme
 dependencies[] = adminimal_admin_menu
+;Permissions
+dependencies[] = fpa
