@@ -124,7 +124,7 @@ dependencies[] = slac_site_variables
 dependencies[] = slac_block_style
 dependencies[] = slac_style_guide
 ;Roles
-;dependencies[] = slac_extorg_roles
+dependencies[] = slac_extorg_roles
 
 ;Sidebar block
 dependencies[] = slac_sidebar_block
