@@ -160,3 +160,5 @@ dependencies[] = slac_policy_demo_pages
 ;Admin Pieces
 ;dependencies[] = adminimal_theme
 dependencies[] = adminimal_admin_menu
+;Permissions
+dependencies[] = fpa
