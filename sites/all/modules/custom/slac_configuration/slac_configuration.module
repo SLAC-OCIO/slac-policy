@@ -86,6 +86,12 @@ function slac_configuration_form($form, &$form_state) {
     '#maxlength' => 40,
     '#description' => t("If you don't have direct file access to the server, use this field to upload your logo."),
   );
+  $form['home_page'] = array(
+    '#type' => 'textarea',
+    '#title' => t('Main Page Content'),
+    '#default_value' => t('This is my Block Content'),
+    '#required' => FALSE,
+  );
 
   $form = system_settings_form($form);
   // We don't want to call system_settings_form_submit(), so change #submit.
@@ -191,4 +197,23 @@ function slac_configuration_form_alter(&$form, &$form_state, $form_id) {
       . t("Logo dimensions restrictions: maximum width - 200 pixels, height - @height pixels. ",
         array('@height' => SLAC_CONFIGURATION_LOGO_HEIGHT_INFO)) . '</div>';
   }
+}function slac_configuration_block_info(){
+  $block['mainpage_content'] = array(
+    'info' => t('Main Page Content Block'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
+  return $block;
+}
+function myblockmodule_block_view($block_key){
+  $block = array();
+
+  if($block_key == 'mainpage_content'){ //We only want to define the content of OUR block
+    //This is the title of the block.
+    $block['subject'] = t('My Block');
+
+    //Define the block content.
+    $block['content'] = t('This is my MainPage Block');
+  }
+
+  return $block;
 }
