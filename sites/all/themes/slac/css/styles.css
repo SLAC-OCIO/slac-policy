@@ -1967,18 +1967,24 @@ h2.last-up { font-size: 1em !important; }
 .field-name-field-hbp-subsection-title { text-decoration-line: overline; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/xalg\/Sites\/slac-policy\/sites\/all\/themes\/slac\/sass\/_layout\.sass}line{font-family:\000033344}}
-.pane-node-field-hbp-subsection ul { list-style: disc inside; }
+.field-name-field-hbp-subsection-body ul { list-style: disc inside; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/xalg\/Sites\/slac-policy\/sites\/all\/themes\/slac\/sass\/_layout\.sass}line{font-family:\000033347}}
-.pane-node-field-hbp-subsection { list-style: decimal inside; }
+.field-name-field-hbp-subsection-body ol { list-style: decimal inside; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/xalg\/Sites\/slac-policy\/sites\/all\/themes\/slac\/sass\/_layout\.sass}line{font-family:\000033350}}
-.page-basic-io .pane-node-body ul { list-style: disc inside; }
+.pane-node-field-hbp-subsection ul { list-style: disc inside; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/xalg\/Sites\/slac-policy\/sites\/all\/themes\/slac\/sass\/_layout\.sass}line{font-family:\000033353}}
-.page-basic-io .pane-node-body ol { list-style: decimal inside; }
+.pane-node-field-hbp-subsection ol { list-style: decimal inside; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/xalg\/Sites\/slac-policy\/sites\/all\/themes\/slac\/sass\/_layout\.sass}line{font-family:\000033356}}
+.page-basic-io .pane-node-body ul { list-style: disc inside; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/xalg\/Sites\/slac-policy\/sites\/all\/themes\/slac\/sass\/_layout\.sass}line{font-family:\000033359}}
+.page-basic-io .pane-node-body ol { list-style: decimal inside; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/xalg\/Sites\/slac-policy\/sites\/all\/themes\/slac\/sass\/_layout\.sass}line{font-family:\000033362}}
 .content .general-right .inside .panel-pane { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; -webkit-box-shadow: #858585 1px 1px 4px; -moz-box-shadow: #858585 1px 1px 4px; box-shadow: #858585 1px 1px 4px; margin: 10px 0; background: #f4f4f4; padding: 1.7em; }
 
 @media (min-width: 480px) { @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/xalg\/Sites\/slac-policy\/sites\/all\/themes\/slac\/sass\/_responsive_misc\.sass}line{font-family:\0000311}}
