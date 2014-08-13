@@ -164,6 +164,12 @@ function slac_preprocess_html(&$variables) {
 	drupal_add_html_head($element_css, 'main_styles');
 	drupal_add_html_head($element_modernizr, 'modernizr');
 	drupal_add_html_head($selectivizr, 'selectivzr');
+
+  // Add chosen on all pages.
+  $chosen_path = libraries_get_path('chosen_v1.1.0');
+  if (!empty($chosen_path)) {
+    drupal_add_js($chosen_path . '/chosen.jquery.js');
+  }
 }
 
 /**
@@ -226,7 +232,7 @@ function slac_menu_link(array $variables) {
 function slac_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == 'search_block_form') {
 
-    $form['search_block_form']['#attributes']['placeholder'] = t('search SLAC');
+    $form['search_block_form']['#attributes']['placeholder'] = t('search web or people');
     $form['actions']['submit']['#value'] = t('GO'); // Change the text on the submit button
 
   }

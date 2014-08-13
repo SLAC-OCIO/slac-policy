@@ -1,3 +1,16 @@
+.content .general-two-col
+  &:not(.reverse) .general-left,
+  &.reverse .general-right
+    ul,
+    ol
+      list-style-type: disc
+      padding-left: 20px
+      margin-bottom: 10px
+      li
+        line-height: 20px
+        margin-bottom: 5px
+    ol
+      list-style-type: decimal
 //Stanfords Accordian
 .accordion
   margin-bottom: 20px
@@ -592,6 +605,7 @@ ul.tabs, .action-links,
 //-----------------------------------
 .pane-page-logo
   img
+    float: left
     //width: 158px
     width: 115px
 
@@ -604,7 +618,13 @@ ul.tabs, .action-links,
       //display: none
       &.svg
         display: inline
-
+.header-date
+  font-size: .75em
+  letter-spacing: 1px
+  font-weight: bold
+  color: #ffffff
+  float: left
+  margin: 15px 0 0 10px
 
 .site-title
   margin-bottom: 9px
@@ -777,7 +797,7 @@ ul.tabs, .action-links,
   a
     color: inherit
 
-  .pane-1, .pane-2
+  .pane-1, .pane-2, .pane-site-address
     display: inline
     p
       display: block
@@ -789,7 +809,9 @@ ul.tabs, .action-links,
     p
       margin-bottom: 5px
 
-
+  .pane-2
+    display: block
+    clear: both
 
 +at-breakpoint($less-than-800)
   .footer-seccond
@@ -1020,6 +1042,14 @@ ul.tabs, .action-links,
 
 //Frequently Asked Questions
 //-----------------------------------
+.content .general-two-col .general-left .faq-list ul
+  padding-left: 0
+  li
+    border-bottom: 1px solid #f3f1eb
+    margin-bottom: 10px
+    padding-bottom: 10px
+    list-style-type: none
+
 .faq-list
   li
     &.inactive
@@ -1132,7 +1162,15 @@ ul.tabs, .action-links,
       .front &
         margin-bottom: 36px
 
-
+.front .page-basic-io
+  .general-left
+    .panels-ipe-portlet-wrapper,
+    .panel-pane
+      margin-bottom: 23px
+  .inner_right
+    .panels-ipe-portlet-wrapper,
+    .pane-fieldable-panels-pane
+      margin-bottom: 8px
 //Main heading style
 h2
 
@@ -1200,6 +1238,8 @@ h2
       padding-bottom: 5px
       margin-bottom: 20px
 
+  .pane-page-content .general-left .pane-node-updates h2.pane-title
+    font-size: 15px
 
   .left-title-wrapper &
     .general-left-title &
@@ -1234,12 +1274,12 @@ h2
   //only for logged users
   .content &
     .panels-ipe-portlet-wrapper
-      margin-bottom: 25px
+      margin-bottom: 18px
 
 
 .panel-pane
   .general-right &
-    margin-bottom: 36px
+    margin-bottom: 18px
     &:last-child
       margin-bottom: 0
       //text-align: center
@@ -2061,9 +2101,9 @@ ul.news-archive-class
     line-height: 18px
 
   .field-name-field-sb-image
-    float: left
-    max-width: 70px
-    margin: 0 20px 10px 0
+    float: right
+    max-height: 125px
+    margin: 0px 0px 10px 10px
 
   .field-name-field-subtitle
 
@@ -2898,6 +2938,8 @@ h2
 /* IntOrg profile styles */
 
 .page-basic-io
+  a:hover
+    color: $dark-blue
   .top-wrapper
     background: url('../images/header-bg.jpg') center no-repeat
     background-size: cover
@@ -2924,6 +2966,7 @@ h2
       font-size: 32px
       font-weight: bold
       &:hover
+        text-decoration: underline
         color: #666
   .pane-site-name-abbreviation
     margin-right: 11px
@@ -2966,6 +3009,7 @@ h2
           color: #20659a
           &:hover
             text-decoration: underline
+
   .panel-panel.content
     .pane-menu-tree > div
       background-color: #fff
@@ -3031,11 +3075,18 @@ h2
               background: #eaeef0
 
   .top-menu
+    min-height: 20px
     background: rgba(67, 121, 142, 0.4)
     ul.menu
       float: right
       li
+        list-style-type: none
+        list-style-image: none
         float: left
+        +at-breakpoint($tablet)
+          border-right: 1px solid white
+          &:first-child
+            border-left: 1px solid white
         border-right: 1px solid #fff
         &:first-child
           border-left: 1px solid #fff
@@ -3045,9 +3096,17 @@ h2
         font-size: 9px
         text-transform: uppercase
         line-height: 20px
+        font-weight: bold
+        letter-spacing: .125em
         &:hover,
         &.active
           background-color: transparent
+        &:hover
+          text-decoration: underline
+        +at-breakpoint($tablet)
+          padding: 0 30px
+      +at-breakpoint($mobile-only)
+        display: none
 
   .pane-node-field-bp-image img
     border: 2px solid #e1e1e1
@@ -3119,7 +3178,8 @@ h2
     .pane-bundle-slac-sidebar-block
       padding: 0
       background: none
-      h2.panel-title
+      h2.panel-title,
+      h2.pane-title
         font-size: 12px
         color: #484848
         line-height: 17px
@@ -3136,6 +3196,9 @@ h2
         background: #f4f4f4
         font-size: 12px
         line-height: 18px
+  div.general-right
+    a
+      color: #20659a
     .menu
       padding-left: 6px
       li
@@ -3152,6 +3215,16 @@ h2
             left: -12px
             top: 50%
             margin-top: -10px
+
+  .pane-body-grey-background-style
+    background: #f4f4f4
+  .general-right .panel-pane > .view
+    background: #f4f4f4
+
+  .pane-page-content .reverse .general-right .panel-pane > .view
+    padding: 0
+    background: transparent
+
   .content .general-right .panel-pane .menu li a.active-item
     text-decoration: none
 
@@ -3195,6 +3268,7 @@ h2
     p
       font-size: 0.9rem
       line-height: 1.5em
+      margin-bottom: 15px
 
   .event-listing-item .field-name-body
     font-size: 14px
@@ -3302,6 +3376,19 @@ h2
       .general-right
         margin: 0
         text-align: right
+  article.node-blog.node-teaser header h2 a:hover
+    background-color: #c8d6c8
+    &:after
+      color: #2284c3
+  .region-grey-background-style .blog-tags ul li a:hover
+    background-color: $dark-blue
+
+  .html &
+    .pane-bundle-slac-mini-slideshow .field-slideshow-controls a,
+    .pane-bundle-slideshow-description-bottom .field-slideshow-controls a
+      color: #fff
+      &:hover
+        color: #2582ca
 
 
 .front
@@ -3318,7 +3405,53 @@ h2
         font-size: 1.1rem
         color: #46494b
 
+.page-basic-io .user-search
+  .chosen-container
+    display: block
+    width: 100% !important
+    padding: 0
+    font-size: 10px
+    color: #919191
+    text-transform: uppercase
+    font-weight: bold
+    display: block
+    cursor: default
+    .chosen-single
+      color: #919191
+      display: block
+      padding: 0 9px
+      height: 22px
+      line-height: 22px
+      position: relative
+      letter-spacing: 1px
+      &:after
+        content: ""
+        width: 22px
+        height: 22px
+        position: absolute
+        right: 0
+        top: 0
+        background: url("../images/chosen-sprite.png") no-repeat 6px 2px
+        border-left: 1px solid #e1e1e1
+    .chosen-search
+      display: none
+    .chosen-drop
+      border-top: 1px solid #e1e1e1
+      background: #efefef
+      display: none
+      padding: 0
+      li
+        padding: 7px 9px
+        &.result-selected,
+        &.highlighted
+          background: #2382c9
+          color: #fff
+    &.chosen-with-drop .chosen-drop
+      display: block
 
+.bordered-img img
+  border: 5px solid #f3f1eb
+  display: block
 //policy-elements
 //-----------------------------------
 .s-chap
@@ -3375,3 +3508,5 @@ h2.last-up
   background: #f4f4f4
   padding: 1.7em
   //box-shadow: .1em .1em .1em
+  .pane-node-updated h2.pane-title
+    font-size: 11px
