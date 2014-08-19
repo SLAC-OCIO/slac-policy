@@ -123,6 +123,7 @@ dependencies[] = slac_configurations
 dependencies[] = slac_site_variables
 dependencies[] = slac_block_style
 dependencies[] = slac_style_guide
+dependencies[] = ctools_plugins
 ;Roles
 dependencies[] = slac_extorg_roles
 

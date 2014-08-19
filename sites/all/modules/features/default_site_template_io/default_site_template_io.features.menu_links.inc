@@ -52,6 +52,48 @@ function default_site_template_io_menu_default_menu_links() {
     'weight' => -49,
     'customized' => 1,
   );
+  // Exported menu link: menu-footer-menu-1_faq:faq
+  $menu_links['menu-footer-menu-1_faq:faq'] = array(
+    'menu_name' => 'menu-footer-menu-1',
+    'link_path' => 'faq',
+    'router_path' => 'faq',
+    'link_title' => 'Faq',
+    'options' => array(
+      'cami' => array(
+        'pages' => '',
+      ),
+      'attributes' => array(),
+      'identifier' => 'menu-footer-menu-1_faq:faq',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -47,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-footer-menu-1_news:node/57
+  $menu_links['menu-footer-menu-1_news:node/57'] = array(
+    'menu_name' => 'menu-footer-menu-1',
+    'link_path' => 'node/57',
+    'router_path' => 'node/%',
+    'link_title' => 'News',
+    'options' => array(
+      'cami' => array(
+        'pages' => '',
+      ),
+      'attributes' => array(),
+      'identifier' => 'menu-footer-menu-1_news:node/57',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -48,
+    'customized' => 1,
+  );
   // Exported menu link: menu-header-menu_doe-office-of-science:http://science.energy.gov/
   $menu_links['menu-header-menu_doe-office-of-science:http://science.energy.gov/'] = array(
     'menu_name' => 'menu-header-menu',
@@ -204,6 +246,8 @@ function default_site_template_io_menu_default_menu_links() {
   t('About');
   t('Blog');
   t('DOE Office of Science');
+  t('Faq');
+  t('News');
   t('SLAC');
   t('SLAC Home');
   t('SLAC News');

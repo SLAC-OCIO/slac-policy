@@ -471,8 +471,8 @@ function default_site_template_io_strongarm() {
     'toggle_favicon' => 1,
     'toggle_main_menu' => 1,
     'toggle_secondary_menu' => 1,
-    'site_name_abbreviation' => 'Admin Guide',
-    'site_url_address' => '2575 Sand Hill Road, Menlo Park, CA 94025',
+    'site_name_abbreviation' => 0,
+    'site_url_address' => 0,
     'default_logo' => 0,
     'logo_path' => 'sites/all/modules/features/default_site_template_io/logo-header.png',
     'logo_upload' => '',
@@ -493,7 +493,6 @@ function default_site_template_io_strongarm() {
     ),
     'zen_rebuild_registry' => 0,
     'zen_wireframes' => 0,
-    'site_name' => 'IT Policy Guide',
   );
   $export['theme_slac_settings'] = $strongarm;
 

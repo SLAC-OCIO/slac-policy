@@ -31,10 +31,11 @@
               <?php if ($logo_path): ?>
                 <a href="https://intranet.slac.stanford.edu" rel="home" id="logo" title="Home"><img src="<?php print $logo_path; ?>" alt="SLAC"/></a>
               <?php endif; ?>
+              <?php if ($content['header-date']): ?>
+                <div class="header-date"><?php print $content['header-date']; ?></div>
+              <?php endif ?>
+
             </div>
-            <?php if ($content['header-date']): ?>
--             <div class="header-date"><?php print $content['header-date']; ?></div>
--           <?php endif ?>
           </div>
           <?php if ($content['user-search']): ?>
             <div class="user-search"><?php print $content['user-search']; ?></div>
