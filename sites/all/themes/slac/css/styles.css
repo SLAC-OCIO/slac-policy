@@ -757,7 +757,7 @@ ul.tabs li a:hover, .action-links li a:hover { background-color: #2e2e2e; }
 .svg .pane-page-logo img.svg { display: inline; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/xalg\/Sites\/slac-policy\/sites\/all\/themes\/slac\/sass\/_layout\.sass}line{font-family:\00003621}}
-.header-date { font-size: 0.75em; letter-spacing: 1px; font-weight: bold; color: white; float: left; margin: 15px 0 0 10px; }
+.header-date { font-size: 0.75em; letter-spacing: 1px; font-weight: bold; color: white; float: left; margin: 25px 0 0 10px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/xalg\/Sites\/slac-policy\/sites\/all\/themes\/slac\/sass\/_layout\.sass}line{font-family:\00003629}}
 .site-title { margin-bottom: 9px; margin: 10px 0; }
