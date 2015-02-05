@@ -214,5 +214,10 @@
        $('.accordion-heading').click(function(){
            $(this).next('.collapse').slideToggle();
        });
+    $('.pane-node-field-hbp-attachments').each(function() {
+      if($('.field-item ul', this).length == 0) {
+        $(this).hide();
+      }
+    });
   });
 }(this, this.document, this.jQuery, this.Drupal));
